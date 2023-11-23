@@ -5,7 +5,8 @@
   "main": "src/server.ts",
   "scripts": {
     "build": "tsc",
-    "start": "node -r dotenv/config ./dist/server.js"
+    "start": "node -r dotenv/config ./dist/server.js",
+    "dev": "ts-node-dev -r dotenv/config ./src/server.ts"
   },
   "author": "ivansimplicio",
   "license": "MIT",
@@ -25,6 +26,7 @@
     "eslint-plugin-promise": "^6.0.0",
     "git-commit-msg-linter": "^5.0.4",
     "prettier": "^3.1.0",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.3.2"
   }
 }
