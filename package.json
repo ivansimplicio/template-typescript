@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "description": "Project template using TypeScript",
   "main": "src/server.ts",
-  "scripts": {},
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/server.js"
+  },
   "author": "ivansimplicio",
   "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
   "devDependencies": {
+    "@types/express": "^4.17.21",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^9.0.0",
@@ -17,6 +24,6 @@
     "eslint-plugin-promise": "^6.0.0",
     "git-commit-msg-linter": "^5.0.4",
     "prettier": "^3.1.0",
-    "typescript": "*"
+    "typescript": "^5.3.2"
   }
 }
