@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Project template using TypeScript",
   "main": "src/server.ts",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "ivansimplicio",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "git-commit-msg-linter": "^5.0.4"
+  }
 }
