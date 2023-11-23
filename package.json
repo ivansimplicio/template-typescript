@@ -5,11 +5,12 @@
   "main": "src/server.ts",
   "scripts": {
     "build": "tsc",
-    "start": "node ./dist/server.js"
+    "start": "node -r dotenv/config ./dist/server.js"
   },
   "author": "ivansimplicio",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "express": "^4.18.2"
   },
   "devDependencies": {
