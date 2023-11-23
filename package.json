@@ -1,0 +1,10 @@
+{
+  "name": "template-typescript",
+  "version": "1.0.0",
+  "description": "Project template using TypeScript",
+  "main": "src/server.ts",
+  "scripts": {
+  },
+  "author": "ivansimplicio",
+  "license": "MIT"
+}
