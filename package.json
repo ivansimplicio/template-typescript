@@ -6,7 +6,13 @@
   "scripts": {
     "build": "tsc",
     "start": "node -r dotenv/config ./dist/server.js",
-    "dev": "ts-node-dev -r dotenv/config ./src/server.ts"
+    "dev": "ts-node-dev -r dotenv/config ./src/server.ts",
+    "lint:check": "eslint --ext .tsx --ext .ts src/",
+    "lint:fix": "eslint . --fix",
+    "prettier:check": "prettier --check ./src",
+    "prettier:fix": "prettier --write ./src",
+    "typecheck": "tsc --noEmit",
+    "pipe:check": "yarn typecheck && yarn lint:check && yarn prettier:check"
   },
   "author": "ivansimplicio",
   "license": "MIT",
